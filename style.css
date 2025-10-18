@@ -23,12 +23,17 @@ body {
   font-family: alvy;
 }
 
+section {
+  max-width: 1920px;
+}
+
 main {
   width: 100%;
   background-color: #121212;
   display: flex;
   flex-direction: column;
   gap: 0rem;
+  align-items: center;
 }
 main section {
   display: flex;
@@ -91,4 +96,25 @@ main section .bottom button .down {
   margin-right: 0.7rem;
   padding: 0.5rem 0.65rem;
   border-radius: 50%;
+}
+
+@media (min-width: 900px) {
+  main section {
+    flex-direction: row;
+  }
+  main section .top,
+  main section .bottom {
+    width: 50%;
+  }
+  main section .bottom {
+    padding: 3rem;
+    justify-content: space-between;
+  }
+  main section .bottom .text {
+    gap: 2rem;
+  }
+  main section .bottom h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
 }
