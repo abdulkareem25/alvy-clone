@@ -1,0 +1,22 @@
+button {
+
+    i {
+        background-color: #292929;
+        border: 0.1rem solid #3D3D3D;
+        margin-right: 0.7rem;
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    width: fit-content;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: roboto;
+    background-color: transparent;
+    color: #F4F2ED;
+}
