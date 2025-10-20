@@ -86,7 +86,7 @@ main .top-bottom .bottom .text {
   gap: 1rem;
 }
 main .top-bottom .bottom h1 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 2.7rem;
   letter-spacing: 0.1rem;
@@ -195,7 +195,6 @@ main #cards .card .buttons button i {
           backdrop-filter: blur(2rem);
 }
 main #cards .card .profile {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -216,6 +215,37 @@ main #cards .card .profile h3 {
 main #cards .card .profile span {
   font-family: roboto;
   font-size: 0.9rem;
+}
+main #touch {
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
+}
+main #touch .content {
+  padding: 2rem;
+  border-radius: 0.7rem;
+  color: #262626;
+  background-color: #CEBD63;
+}
+main #touch .content .title {
+  font-size: 1rem;
+}
+main #touch .content .text h1 {
+  padding: 1rem 0;
+  font-size: 2.7rem;
+  font-weight: 300;
+  line-height: 2.7rem;
+}
+main #touch .content .text button {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 0.7rem;
+  background-color: #121212;
+  justify-content: center;
+}
+main #touch .content .text button i {
+  background-color: transparent;
+  border: none;
+  margin-right: 0;
 }
 
 @media (min-width: 900px) {
@@ -279,5 +309,29 @@ main #cards .card .profile span {
   }
   main #cards {
     flex-direction: row;
+  }
+  main #join {
+    padding-top: 0rem;
+  }
+  main #join .top img {
+    aspect-ratio: 4/3;
+  }
+  main #touch .content {
+    padding: 4rem;
+  }
+  main #touch .content .text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main #touch .content .text h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  main #touch .content .text button {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    align-self: flex-end;
+    justify-self: flex-end;
   }
 }
