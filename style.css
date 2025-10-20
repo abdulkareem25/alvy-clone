@@ -151,6 +151,72 @@ main #ourteam h1 {
 main #ourteam button {
   display: none;
 }
+main #cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+main #cards .card {
+  flex: 1;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+}
+main #cards .card:nth-child(1) {
+  background-image: url(assets/profile1.webp);
+}
+main #cards .card:nth-child(2) {
+  background-image: url(assets/profile2.webp);
+}
+main #cards .card:nth-child(3) {
+  background-image: url(assets/profile3.webp);
+}
+main #cards .card .buttons {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: flex-end;
+}
+main #cards .card .buttons button {
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+main #cards .card .buttons button i {
+  opacity: 0.6;
+  background-color: rgba(225, 225, 225, 0.1);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+}
+main #cards .card .profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(225, 225, 225, 0.1);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  border: 0.1rem solid rgba(225, 225, 225, 0.1);
+  border-radius: 0.2rem;
+  color: #F4F2ED;
+}
+main #cards .card .profile h3 {
+  font-family: alvy;
+  font-size: 1.2rem;
+  font-weight: 100;
+  line-height: 1.9rem;
+}
+main #cards .card .profile span {
+  font-family: roboto;
+  font-size: 0.9rem;
+}
 
 @media (min-width: 900px) {
   main .top-bottom {
@@ -210,5 +276,8 @@ main #ourteam button {
   }
   main #ourteam button {
     display: flex;
+  }
+  main #cards {
+    flex-direction: row;
   }
 }
